@@ -5,11 +5,31 @@ function getComputerChoice() {
   }
 
   else if (randomNumber <= 20) {
-    return('Paper!')
+    return('Paper!');
   }
 
   else { 
-    return('Scissors!')
+    return('Scissors!');
   }
 }
-console.log(getComputerChoice())
+console.log(getComputerChoice());
+
+function getHumanChoice() {
+  let answer = prompt('Rock, Paper, or Scissors?');
+  if (answer === 'rock') {
+    return('Rock!');
+  }
+
+  else if (answer === 'paper') {
+    return('Paper!');
+  }
+
+  else if (answer === 'scissors') {
+    return('Scissors!');
+  }
+  
+}
+
+
+
+console.log(getHumanChoice());
