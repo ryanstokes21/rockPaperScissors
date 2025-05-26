@@ -21,30 +21,30 @@ function getHumanChoice() {
   }
 }
 
-console.log(getHumanChoice());
+//console.log(getHumanChoice());
 
-//let humanScore = 0
-//let computerScore = 0
+let humanScore = 0
+let computerScore = 0
 
-//function playRound(humanChoice, computerChoice) {
-  //humanChoice = humanChoice.toLowerCase();
-  //computerChoice = computerChoice.toLowerCase();
+function playRound(humanChoice, computerChoice) {
+  humanChoice = humanChoice.toLowerCase();
   
-  //if (humanChoice === computerChoice) {
-    //console.log('It\'s a tie!');
-  //} else if (
-    //(humanChoice === 'rock' && computerChoice === 'scissors') ||
-    //(humanChoice === 'scissors' && computerChoice === 'paper') ||
-    //(humanChoice === 'paper' && computerChoice === 'rock')
-  //) {
-    //console.log(`You Win ${humanChoice} beats ${computerChoice}`);
-  //} else {
-    //console.log(`You Lose ${computerChoice} beats ${humanChoice}`);
-  //}
+  if (humanChoice === computerChoice) {
+    console.log('It\'s a tie!');
+  } else if (
+    (humanChoice === 'rock' && computerChoice === 'scissors') ||
+    (humanChoice === 'scissors' && computerChoice === 'paper') ||
+    (humanChoice === 'paper' && computerChoice === 'rock')
+  ) {
+    humanScore++; //Human Wins +1
+    console.log(`You Win ${humanChoice} beats ${computerChoice}`);
+  } else {
+    computerScore++; //Computer Wins +1
+    console.log(`You Lose ${computerChoice} beats ${humanChoice}`);
+  }
+}
 
-//}
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
 
-//const humanSelection = getHumanChoice();
-//const computerSelection = getComputerChoice();
-
-//playRound(humanSelection, computerSelection)
+playRound(humanSelection, computerSelection);
