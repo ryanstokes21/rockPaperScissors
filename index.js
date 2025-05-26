@@ -15,21 +15,17 @@ function getComputerChoice() {
 console.log(getComputerChoice());
 
 function getHumanChoice() {
-  let answer = prompt('Rock, Paper, or Scissors?');
-  if (answer === 'rock') {
-    return('Rock!');
-  }
-
-  else if (answer === 'paper') {
-    return('Paper!');
-  }
-
-  else if (answer === 'scissors') {
-    return('Scissors!');
-  }
-  
+  let humanChoice = prompt('Rock, Paper, or Scissors?');
+    humanChoice = humanChoice.toLowerCase();
+    return(humanChoice);
 }
 
-
-
 console.log(getHumanChoice());
+
+let humanScore = 0
+let computerScore = 0
+
+function playRound(humanChoice, computerChoice) {
+  humanChoice = humanChoice.toLowerCase();
+
+}
