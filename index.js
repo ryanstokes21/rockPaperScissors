@@ -11,21 +11,22 @@ function getComputerChoice() {
 
 let humanScore = 0
 let computerScore = 0
+const results = document.querySelector('#results')
 
 function playRound(humanChoice, computerChoice) {
 
   if (humanChoice === computerChoice) {
-    console.log('It\'s a tie!');
+    results.textContent = 'It\'s a tie!';
   } else if (
     (humanChoice === 'rock' && computerChoice === 'scissors') ||
     (humanChoice === 'scissors' && computerChoice === 'paper') ||
     (humanChoice === 'paper' && computerChoice === 'rock')
   ) {
     humanScore++; //Human Wins +1
-    console.log(`You Win ${humanChoice} beats ${computerChoice}`);
+    results.textContent = `You Win ${humanChoice} beats ${computerChoice}`;
   } else {
     computerScore++; //Computer Wins +1
-    console.log(`You Lose ${computerChoice} beats ${humanChoice}`);
+    results.textContent = `You Lose ${computerChoice} beats ${humanChoice}`;
   }
 }
 
