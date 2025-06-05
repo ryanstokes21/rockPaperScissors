@@ -14,7 +14,9 @@ function getComputerChoice() {
 
 let humanScore = 0
 let computerScore = 0
-const results = document.querySelector('#results')
+
+const score = document.querySelector('#score');
+const results = document.querySelector('#results');
 
 function playRound(humanChoice, computerChoice) {
 
