@@ -64,5 +64,3 @@ const scissorsBtn = document.querySelector('#scissors');
 scissorsBtn.addEventListener('click', () => {
   playRound('scissors', getComputerChoice());
 });
-
- 
