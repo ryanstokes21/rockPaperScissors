@@ -1,6 +1,3 @@
-let humanScore = 0
-let computerScore = 0
-
 function getComputerChoice() {
   let randomNumber = Math.random() ;
   if (randomNumber <= .33) {
@@ -11,7 +8,6 @@ function getComputerChoice() {
     return 'scissors';
   }
 }
-
 let humanScore = 0
 let computerScore = 0
 
