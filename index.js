@@ -29,7 +29,26 @@ function playRound(humanChoice, computerChoice) {
     results.textContent = `You Win ${humanChoice} beats ${computerChoice}`;
   } else {
     computerScore++; //Computer Wins +1
-    results.textContent = `You Lose ${computerChoice} beats ${humanChoice}`;
+    results.textContent = `You Lose ${computerChoice} beats ${humanChoice}.`;
+  }
+  displayScore();
+  checkWinner();
+}
+
+function displayScore() {
+  score.textContent = `Score: You ${humanScore} - Computer ${computerScore}`;
+}
+
+function checkWinner() {
+  if (humanScore === 5 || computerScore === 5) {
+    const finalMessage =
+      humanScore > computerScore ? 'You won the game!' : 'Computer won the game!';
+    results.textContent += `\n${finalMessage}`;
+
+    // Disable all buttons
+    document.querySelectorAll('button').forEach((btn) => {
+      btn.disabled = true;
+    });
   }
 }
 
