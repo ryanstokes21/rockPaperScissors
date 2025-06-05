@@ -28,7 +28,7 @@ function playRound(humanChoice, computerChoice) {
     (humanChoice === 'paper' && computerChoice === 'rock')
   ) {
     humanScore++; //Human Wins +1
-    results.textContent = `You Win ${humanChoice} beats ${computerChoice}`;
+    results.textContent = `You Win ${humanChoice} beats ${computerChoice}.`;
   } else {
     computerScore++; //Computer Wins +1
     results.textContent = `You Lose ${computerChoice} beats ${humanChoice}.`;
