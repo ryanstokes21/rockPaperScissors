@@ -56,23 +56,17 @@ function checkWinner() {
 
 const rockBtn = document.querySelector('#rock');
 rockBtn.addEventListener('click', () => {
-  let humanChoice = 'rock';
-  let computerChoice = getComputerChoice();
-  playRound(humanChoice, computerChoice);
+  playRound('rock', getComputerChoice());
 });
 
 const paperBtn = document.querySelector('#paper');
 paperBtn.addEventListener('click', () => {
-  let humanChoice = 'paper';
-  let computerChoice = getComputerChoice();
-  playRound(humanChoice, computerChoice);
+  playRound('paper', getComputerChoice());
 });
 
 const scissorsBtn = document.querySelector('#scissors');
 scissorsBtn.addEventListener('click', () => {
-  let humanChoice = 'scissors';
-  let computerChoice = getComputerChoice();
-  playRound(humanChoice, computerChoice);
+  playRound('scissors', getComputerChoice());
 });
 
  
