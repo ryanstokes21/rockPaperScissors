@@ -1,47 +1,58 @@
-# Rock Paper Scissors Game
+# Rock Paper Scissors - DOM Edition 🎮
 
-This is a simple Rock-Paper-Scissors game built with JavaScript. The player competes against the computer in a 5-round match, with score tracking and a final winner announced.
-
-⚠️ **Note:** This version is console-based. You must open your browser’s **developer console** to play and view the results.
-
----
-
-## 🎮 How to Play
-
-1. Open the `index.html` file in your web browser.
-2. When prompted, type your choice: **rock**, **paper**, or **scissors** (case-insensitive).
-3. The computer will make a random selection.
-4. Results and scores will appear in the browser console.
-5. After 5 rounds, the final score and winner will be displayed.
-
-> 💡 To open the developer console:
-> - Windows: Press `F12` or `Ctrl + Shift + I`
-> - Mac: Press `Cmd + Option + I`
-> - Then click on the **Console** tab
+This is a browser-based Rock-Paper-Scissors game built with HTML, CSS, and JavaScript.  
+The player competes against the computer by clicking buttons to make their selection.
 
 ---
 
-## 🚀 Features
+## 🛠 Features
 
-- Case-insensitive input handling
-- Randomized computer choices
-- Score tracking over 5 rounds
-- Final winner summary
-
----
-
-## 🛠️ Built With
-
-- HTML (for browser setup)
-- JavaScript (for game logic and prompts)
+- Three interactive buttons for player input (`Rock`, `Paper`, `Scissors`)
+- Random computer choice each round
+- Real-time score tracking and display
+- First to 5 points wins the game
+- Cleanly disables buttons once a winner is declared
 
 ---
 
-## 📂 How to Run Locally
+## 🧠 What I Learned
 
-1. Clone this repository or download the ZIP.
-2. Open the `index.html` file in your web browser.
-3. Follow the prompts and check the console to play.
+- How to use DOM methods like `addEventListener`, `textContent`, and `querySelector`
+- How to separate logic into reusable functions
+- How to track and update game state through UI interaction
+- How to structure a simple project without needing `prompt()` or `console.log()` for user input
+
+---
+
+## 🧩 Tech Stack
+
+- **HTML** — for layout and buttons
+- **CSS** — optional styling (add your own flavor!)
+- **JavaScript** — for game logic, DOM interaction, and event handling
+
+---
+
+## 🔄 Future Improvements
+
+- Add a **"Restart Game"** button after game over
+- Display round history below the score
+- Add animations or sound effects for wins/losses
+- Style the game for mobile responsiveness
+
+---
+
+## 📁 How to Use
+
+1. Open `index.html` in any modern web browser
+2. Click a button to choose your move
+3. First to 5 wins the game!
+4. Refresh the page to play again (for now)
+
+---
+
+## 🎯 Status
+
+This project is complete for the core functionality and serves as a hands-on DOM manipulation practice project.
 
 ```bash
 git clone https://github.com/ryanstokes21/rockPaperScissors.git
